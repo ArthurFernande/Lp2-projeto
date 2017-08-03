@@ -1,2 +1,0 @@
-# Lp2-projeto
-
