@@ -30,7 +30,7 @@ public class Filme {
 	}
 	
 	public String toString(){
-		return this.genero + " " + this.anoLancamento;
+		return this.genero + " - " + this.anoLancamento;
 	}
 	
 	//Falta Hashcode e Equals
