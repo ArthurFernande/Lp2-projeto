@@ -78,47 +78,6 @@ public class Emprestimo {
 		result = prime * result + ((tomadorDoEmprestimo == null) ? 0 : tomadorDoEmprestimo.hashCode());
 		return result;
 	}
-
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Emprestimo other = (Emprestimo) obj;
-		if (Item == null) {
-			if (other.Item != null)
-				return false;
-		} else if (!Item.equals(other.Item))
-			return false;
-		if (dataDevolucao == null) {
-			if (other.dataDevolucao != null)
-				return false;
-		} else if (!dataDevolucao.equals(other.dataDevolucao))
-			return false;
-		if (diasCombinados != other.diasCombinados)
-			return false;
-		if (donoDoItem == null) {
-			if (other.donoDoItem != null)
-				return false;
-		} else if (!donoDoItem.equals(other.donoDoItem))
-			return false;
-		if (inicioDoEmprestimo == null) {
-			if (other.inicioDoEmprestimo != null)
-				return false;
-		} else if (!inicioDoEmprestimo.equals(other.inicioDoEmprestimo))
-			return false;
-		if (tomadorDoEmprestimo == null) {
-			if (other.tomadorDoEmprestimo != null)
-				return false;
-		} else if (!tomadorDoEmprestimo.equals(other.tomadorDoEmprestimo))
-			return false;
-		return true;
-	}
 	
-	
-	
+	// Falta Equals
 }
