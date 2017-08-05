@@ -1,4 +1,8 @@
 package projeto;
+/**
+ * Projeto Lp2 - Tracking Things
+ * @author Enzo Raian
+ */
 
 public class Filme {
 	private String genero;
