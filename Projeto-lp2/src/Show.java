@@ -33,15 +33,6 @@ public class Show {
 	public String toString() {
 		return this.artista + " " + this.numDeFaixas;
 	}
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((artista == null) ? 0 : artista.hashCode());
-		result = prime * result + numDeFaixas;
-		return result;
-	}
 	
 	// Falta Equals
 }
