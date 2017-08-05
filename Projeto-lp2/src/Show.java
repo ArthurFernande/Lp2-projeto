@@ -31,7 +31,7 @@ public class Show {
 
 	@Override
 	public String toString() {
-		return this.artista + " " + this.numDeFaixas;
+		return this.artista + " - " + this.numDeFaixas;
 	}
 	
 	// Falta hashcode e  Equals
