@@ -34,5 +34,5 @@ public class Show {
 		return this.artista + " " + this.numDeFaixas;
 	}
 	
-	// Falta Equals
+	// Falta hashcode e  Equals
 }
