@@ -24,6 +24,6 @@ public class Episodio {
 	}
 	
 	public String toString(){
-		return this.NumEpisodio + " " + this.duracao;
+		return this.NumEpisodio + " - " + this.duracao;
 	}
 }
