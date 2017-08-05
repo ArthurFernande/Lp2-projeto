@@ -1,6 +1,6 @@
 /**
  * Projeto Lp2 - Tracking Things
- * @author enzortc
+ * @author Enzo Raian
  *
  */
 public class Emprestimo {
@@ -13,7 +13,6 @@ public class Emprestimo {
 	
 	public Emprestimo(String donoDoItem, String tomadorDoEmprestimo, String item, String inicioDoEmprestimo,
 			int diasCombinados, String dataDevolucao) {
-		
 		this.donoDoItem = donoDoItem;
 		this.tomadorDoEmprestimo = tomadorDoEmprestimo;
 		this.Item = Item;
@@ -23,7 +22,7 @@ public class Emprestimo {
 	}
 	
 	public void Emprestimo(String donoDoItem, String tomadorDoEmprestimo, String Item, String inicioDoEmprestimo){
-		
+	// implementar metodo	
 	}
 	
 	/**
@@ -32,13 +31,11 @@ public class Emprestimo {
 	 * @param dataDeEntrega 
 	 */
 	public void devolverItem(String diasAtraso, String dataDeEntrega){
-		
+	// Falta implementar esse metodo	
 	}
 	
-	
-	
 	public String getDataDevolucao() {
-		return dataDevolucao;
+		return this.dataDevolucao;
 	}
 
 	public void setDataDevolucao(String dataDevolucao) {
@@ -46,38 +43,23 @@ public class Emprestimo {
 	}
 
 	public String getDonoDoItem() {
-		return donoDoItem;
+		return this.donoDoItem;
 	}
 
 	public String getTomadorDoEmprestimo() {
-		return tomadorDoEmprestimo;
+		return this.tomadorDoEmprestimo;
 	}
 
 	public String getItem() {
-		return Item;
+		return this.Item;
 	}
 
 	public String getInicioDoEmprestimo() {
-		return inicioDoEmprestimo;
+		return this.inicioDoEmprestimo;
 	}
 
 	public int getDiasCombinados() {
-		return diasCombinados;
+		return this.diasCombinados;
 	}
-
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((Item == null) ? 0 : Item.hashCode());
-		result = prime * result + ((dataDevolucao == null) ? 0 : dataDevolucao.hashCode());
-		result = prime * result + diasCombinados;
-		result = prime * result + ((donoDoItem == null) ? 0 : donoDoItem.hashCode());
-		result = prime * result + ((inicioDoEmprestimo == null) ? 0 : inicioDoEmprestimo.hashCode());
-		result = prime * result + ((tomadorDoEmprestimo == null) ? 0 : tomadorDoEmprestimo.hashCode());
-		return result;
-	}
-	
 	// Falta Equals
 }
