@@ -1,5 +1,10 @@
 package projeto;
 
+/**
+ * Projeto Lp2 - Tracking Things
+ * @author Enzo Raian
+ */
+
 public class Item {
 	private String nome;
 	private float valor;
