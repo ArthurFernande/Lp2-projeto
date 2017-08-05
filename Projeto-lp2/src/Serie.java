@@ -34,6 +34,6 @@ public class Serie {
 		return this.genero + " " + this.temporada;
 	}
 	// Falta getepisodios
-	// Falta equals
+	// Falta hashcode e equals
 	
 }
