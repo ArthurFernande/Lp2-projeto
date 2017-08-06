@@ -15,7 +15,7 @@ public class Emprestimo {
 	private ArrayList <Object> ListaDeItens = new ArrayList(); 
 	
 	public Emprestimo(String donoDoItem, String tomadorDoEmprestimo, String item, String inicioDoEmprestimo,
-			int diasCombinados, String dataDevolucao) {
+					  int diasCombinados, String dataDevolucao) {
 		this.donoDoItem = donoDoItem;
 		this.tomadorDoEmprestimo = tomadorDoEmprestimo;
 		this.Item = Item;
@@ -25,6 +25,7 @@ public class Emprestimo {
 	}
 	
 	/**
+	 * Este metodo é responsavel por realizar emprestimos
 	 * @param donoDoItem indica o nome do dono do item.
 	 * @param tomadorDoEmprestimo o nome do usuário que pegou o item.
 	 * @param Item indica o item emprestado.
@@ -43,13 +44,20 @@ public class Emprestimo {
 	}
 	
 	/**
+	 * Este metodo é responsavel por devolver itens 
+	 * @param Item indica o item que deve ser devolvido.
 	 * @param diasAtraso indica a quantidade de dias que o item está atrasado. 
 	 * @param dataDeEntrega indica a data real de entrega do item.
-	 * @return
+	 * @return item devolvido ou o item nao está emprestado
 	 */
-	public String devolverItem(String diasAtraso, String dataDeEntrega){
-		
-		return "Item devolvido com sucesso!";
+	public String devolverItem(String Item, String diasAtraso, String dataDeEntrega){
+		for (Object item : ListaDeItens){
+			if (((Emprestimo) item).getItem() == item){ 
+				ListaDeItens.remove(item);
+				return "Item devolvido com sucesso!";
+			}
+		}
+		return "O item não está emprestado";
 	}
 	
 	public String getDataDevolucao() {
