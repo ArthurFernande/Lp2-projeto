@@ -4,16 +4,10 @@ package classes;
  * Projeto Lp2 - Tracking Things
  * @author Italo Modesto.
  */
-public class Item {
+public abstract class Item {
 	protected String nome;
 	protected double valor;
 	protected boolean estado;
-	
-	public Item(String nome, double valor, boolean estado){
-		this.nome = nome;
-		this.valor = valor;
-		this.estado = false;
-	}
 	/**
 	 * 
 	 * @return o nome do item.
@@ -39,7 +33,7 @@ public class Item {
 	 * Este metodo altera o valor do item.
 	 * @param valor sera o novo valor do item.
 	 */
-	public void setValor(double valor) {
+	public void setValor(Double valor) {
 		this.valor = valor;
 	}
 	/**
