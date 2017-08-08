@@ -3,38 +3,39 @@ package classes;
 import java.util.ArrayList;
 
 public class JogoTabuleiro extends Item {
+
+	public JogoTabuleiro(String nome, double valor) {
+		super(nome, valor);
+
+	}
+
 	ArrayList<String> pecas = new ArrayList<String>();
 
 	/**
-	 * construtor responsavel pelos atributos Jogo de Tabuleiro
-	 * 
-	 * @param nome
-	 *            do item
-	 * @param valor
-	 *            do item
-	 * @param estado
-	 */
-	public JogoTabuleiro(String nome, Double valor, boolean estado) {
-		this.nome = nome;
-		this.valor = valor;
-		this.estado = estado;
-
-	}
-	public 
-
-	/**
-	 * metodo responsavel por mostrar pecas perdidas.
+	 * metodo responsavel por adicionar as pecas
 	 * 
 	 * @return
 	 */
-	public String pecasPerdidas() {
-		String pecasperdeu = " ";
+	public void adicionarPecasperdidas(String nomePecas) {
+		this.pecas.add(nomePecas);
 
-		for (int i = 0; i <= pecas.size(); i++) {
-			pecasperdeu += pecas.get(i) + " ";
-		}
-		return pecasperdeu;
 	}
+
+	/**
+	 * metodo responsavel por verificar se alguma peca foi retirada
+	 * 
+	 * @return
+	 */
+
+	public boolean Pecasperdidas() {
+		return pecas.size() == 0;
+	}
+
+	/**
+	 * gets e sets
+	 * 
+	 * @return
+	 */
 
 	public ArrayList<String> getPecas() {
 		return pecas;
@@ -74,11 +75,11 @@ public class JogoTabuleiro extends Item {
 			return false;
 		return true;
 	}
-	
+
 	/**
 	 * metodo que retorna o objeto jogo de Tabuleiro através de texto
 	 */
-	public String toString(){
+	public String toString() {
 		return super.getNome() + pecas;
 	}
 

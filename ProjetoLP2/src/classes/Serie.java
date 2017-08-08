@@ -22,14 +22,8 @@ public class Serie extends BluRay{
 	 */
 	public Serie(String nome, double valor, int duracao,
 			 int classificacao, String genero, int temporada){
-		
+		super(nome,valor);
 		validaSerie(nome, valor, duracao, classificacao, genero, temporada);
-		
-		super.nome = nome;
-		super.valor = valor;
-		super.estado = false;
-		super.duracao = duracao;
-		super.classificacao = classificacao;
 		this.genero = genero;
 		this.temporada = temporada;
 	}

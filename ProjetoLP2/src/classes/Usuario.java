@@ -46,8 +46,8 @@ public class Usuario {
 	 * @param valor
 	 * @param estado
 	 */
-	public void addItem(String nome, double valor, boolean estado) {
-		Item novoItem = new Item(nome,valor,estado);
+	public void addItem(String nome, double valor) {
+		Item novoItem = new Item(nome,valor);
 		Itens.add(novoItem);
 	}
 	/**
@@ -56,8 +56,8 @@ public class Usuario {
 	 * @param valor
 	 * @param estado
 	 */
-	public void removerItem(String nome, float valor, boolean estado) {
-		Item novoItem = new Item(nome,valor,estado);
+	public void removerItem(String nome, float valor) {
+		Item novoItem = new Item(nome,valor);
 		for (Item itemremove : Itens){
 			if (itemremove.toString() == novoItem.toString()){
 				Itens.remove(itemremove);
@@ -69,7 +69,7 @@ public class Usuario {
 
 	}
 	
-	public void atualizarItem(String nome, float valor, String estado){
+	public void atualizarItem(String nome, float valor){
 		
 	}
 

@@ -1,13 +1,27 @@
 package classes;
+
+import util.Util;
+
 /**
  * Esta classe serve de base para todos os itens que serao cadastrados no sistema.
  * Projeto Lp2 - Tracking Things
  * @author Italo Modesto.
  */
-public abstract class Item {
+public  class Item {
 	protected String nome;
 	protected double valor;
 	protected boolean estado;
+	
+	
+	public Item (String nome, double valor){
+		Util.valida(nome,"nome");
+		Util.validaValor(valor, "valorItem");
+		
+		
+		this.nome=nome;
+		this.valor = valor;
+		this.estado = false;
+	}
 	/**
 	 * 
 	 * @return o nome do item.

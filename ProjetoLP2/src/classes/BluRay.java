@@ -5,6 +5,10 @@ package classes;
  *
  */
 public abstract class BluRay extends Item{
+	
+	public BluRay(String nome, double valor) {
+		super(nome, valor);
+	}
 	protected int duracao;
 	protected int classificacao;
 	/**
