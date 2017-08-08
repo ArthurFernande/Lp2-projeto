@@ -74,4 +74,5 @@ public class Emprestimo {
 		return this.diasCombinados;
 	}
 	// Falta Equals e HashCode
+	
 }
