@@ -1,13 +1,19 @@
 package classes;
 /**
  * Esta classe serve de base para todos os itens que serao cadastrados no sistema.
+ * Projeto Lp2 - Tracking Things
  * @author Italo Modesto.
- *
  */
-public abstract class Item {
+public class Item {
 	protected String nome;
-	protected Double valor;
+	protected double valor;
 	protected boolean estado;
+	
+	public Item(String nome, double valor, boolean estado){
+		this.nome = nome;
+		this.valor = valor;
+		this.estado = false;
+	}
 	/**
 	 * 
 	 * @return o nome do item.
@@ -26,14 +32,14 @@ public abstract class Item {
 	 * 
 	 * @return o valor do item.
 	 */
-	public Double getValor() {
+	public double getValor() {
 		return valor;
 	}
 	/**
 	 * Este metodo altera o valor do item.
 	 * @param valor sera o novo valor do item.
 	 */
-	public void setValor(Double valor) {
+	public void setValor(double valor) {
 		this.valor = valor;
 	}
 	/**
