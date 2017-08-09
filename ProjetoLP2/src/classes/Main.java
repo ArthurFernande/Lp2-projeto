@@ -1,15 +1,15 @@
 package classes;
-import classes.Sistema;
 
+import easyaccept.EasyAccept;
 
 public class Main {
-    public static void main(String[] args) {
-        Sistema sistema = new Sistema();
-        
-        
-        sistema.adicionarUsuario("joao", "234", "joao@ccc");
-        sistema.adicionarUsuario("corrinha", "123", "corrinha@ff");
-        System.out.println(sistema.getListaDeUsuarios().get("joao").toString());
-        System.out.println(sistema.getListaDeUsuarios().get("corrinha").toString());
-    }
+
+	public static void main(String[] args) {
+		args = new String[] { "classes.Facade", "us/us1_test.txt",
+				"us/us2_test.txt" }; // separe cada script de teste por virgula.
+
+		EasyAccept.main(args);
+
+	}
+
 }
