@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Usuario {
 	private String nome;
 	private String email;
-	private String celular;
+	private String telefone;
 	
 	private HashSet <Item> Itens = new HashSet();
 	private ArrayList <Emprestimo> Emprestimos = new ArrayList();
@@ -13,7 +13,7 @@ public class Usuario {
 	public Usuario(String nome, String email, String numero) {
 		this.nome = nome;
 		this.email = email;
-		this.celular = numero;
+		this.telefone = telefone;
 	}
 
 	public String getNome() {
@@ -32,46 +32,58 @@ public class Usuario {
 		this.email = email;
 	}
 
-	public String getCelular() {
-		return celular;
+	public String getTelefone() {
+		return telefone;
 	}
 
-	public void setCelular(String celular) {
-		this.celular = celular;
+	public void setCelular(String telefone) {
+		this.telefone = telefone;
 	}
 	
-	/**
-	 * Este metodo é responsavel por cadastrar itens no Sistema.
-	 * @param nome 
-	 * @param valor
-	 * @param estado
-	 */
-	public void addItem(String nome, double valor) {
+	public void cadastrarEletronico(String nome, String telefone, String nomeItem,
+			double preco, String plataforma){
+		
 		
 	}
-	/**
-	 * Este metodo é responsavel por remover itens do sistema.
-	 * @param nome
-	 * @param valor
-	 * @param estado
-	 */
-	public void removerItem(String nome, float valor) {
+	
+	public void cadastrarJogoTabuleiro(String nome,String telefone,
+			String nomeItem,double preco){
 	
 	}
 	
-	public void pesquisarItem(String nomeItem) {
-
-	}
-	
-	public void atualizarItem(String nome, float valor){
+	public void cadastrarBluRayFilme(String nome,String telefone,String nomeItem,double preco,
+			int duracao,String genero,String classificacao, String anoLancamento){
 		
 	}
-
+	
+	public void cadastrarBluRayShow(String nome,String telefone,String nomeItem, double preco,int duracao,
+			int numeroFaixas,String artista, String classicacao){
+		
+	}
+	
+	public void cadastrarBluRaySerie(String nome,String telefone,String nomeItem,double preco,String descricao,
+			int duracao,String classificacao,String genero, int temporada){
+		
+	}
+	
+	public void removerItem (String nome, String telefone,String nomeItem){
+		
+	}
+	public void atualizarItem(String nome,String telefone,String nomeItem,String atributo,String valor){
+		
+	}
+	
+	public String pesquisarItem(String nome, String telefone, String nomeItem){
+		return "";
+	}
+	
+	
 	@Override
 	public String toString() {
-		return this.nome + " - " + this.email + " - " + this.celular;
+		return this.nome + "," + this.email + "," + this.telefone;
 	}
 
 	// Falta HashCode e Equals
 
 }
+
