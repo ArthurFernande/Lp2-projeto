@@ -47,8 +47,7 @@ public class Usuario {
 	 * @param estado
 	 */
 	public void addItem(String nome, double valor) {
-		Item novoItem = new Item(nome,valor);
-		Itens.add(novoItem);
+		
 	}
 	/**
 	 * Este metodo é responsavel por remover itens do sistema.
@@ -57,12 +56,7 @@ public class Usuario {
 	 * @param estado
 	 */
 	public void removerItem(String nome, float valor) {
-		Item novoItem = new Item(nome,valor);
-		for (Item itemremove : Itens){
-			if (itemremove.toString() == novoItem.toString()){
-				Itens.remove(itemremove);
-			}
-		}
+	
 	}
 	
 	public void pesquisarItem(String nomeItem) {
