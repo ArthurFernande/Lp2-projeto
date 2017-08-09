@@ -4,16 +4,18 @@ import java.util.ArrayList;
 
 public class Usuario {
 	private String nome;
-	private String email;
 	private String telefone;
+	private String email;
+	
 	
 	private HashSet <Item> Itens = new HashSet();
 	private ArrayList <Emprestimo> Emprestimos = new ArrayList();
 
-	public Usuario(String nome, String email, String numero) {
+	public Usuario(String nome,String telefone, String email) {
 		this.nome = nome;
-		this.email = email;
 		this.telefone = telefone;
+		this.email = email;
+		
 	}
 
 	public String getNome() {
@@ -24,14 +26,6 @@ public class Usuario {
 		this.nome = nome;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
 	public String getTelefone() {
 		return telefone;
 	}
@@ -40,6 +34,14 @@ public class Usuario {
 		this.telefone = telefone;
 	}
 	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public void cadastrarEletronico(String nome, String telefone, String nomeItem,
 			double preco, String plataforma){
 		
@@ -80,10 +82,9 @@ public class Usuario {
 	
 	@Override
 	public String toString() {
-		return this.nome + "," + this.email + "," + this.telefone;
+		return this.nome + "," + this.telefone + "," + this.email;
 	}
 
 	// Falta HashCode e Equals
 
 }
-
