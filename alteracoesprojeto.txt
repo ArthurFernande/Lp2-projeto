@@ -1,0 +1,93 @@
+Projeto Lp2 
+
+Caso de Uso 1: CRAP DE USUÁRIOS
+
+metodos: 
+cadastrarUsuario(nome,telefone,email)
+removerUsuario(nome,telefone)
+
+atualizarUsuario(nome,telefone,atributo,valor)
+essa entrada atributo representa o atributo do Usuario que dever ser alterado
+atributo == "Email" ou "Telefone" ou "Nome"
+ler valor que representa a mudança seja em (nome,telefone ou email)
+
+pesquisarUsuario(nome,telefone)
+pesquisa o usuario e retorna usuario.toString()
+
+Esses metodos ficaram na classe Sistema
+classe Usuario (String nome,String telefone,String email)
+toString : Raquel Vigolvino Lopes, raquel@computacao.ufcg.edu.br, (83) 9999-0000 
+
+Caso de Uso 2: CRAP DE ITENS
+
+Item(String nomeItem,String preco,boolean estado) 
+
+Item: BluRay(float duracao, String classificao)
+classificacao: LIVRE, DEZ_ANOS, DOZE_ANOS, QUATORZE_ANOS, DEZESSEIS_ANOS, DEZOITO_ANOS.
+genero: ACAO, ANIMACAO, AVENTURA, COMEDIA, DOCUMENTARIO, DRAMA, EROTICO, FAROESTE, FICCAO, MUSICAL, POLICIAL, ROMANCE, SUSPENSE, TERROR, OUTRO.
+
+BluRay: Filme,Show,Serie 
+
+Filme(genero,anoLancamento)
+Show(numeroFaixas,artista)
+Serie(genero,temporada)
+
+Serie: Episodio()
+
+metodos:
+plataforma : PC, MAC, PS3, PS4, XBOX360, XBOX_ONE, NINTENDO_3DS, OUTRO.
+
+cadastrarEletronico(nome,telefone,nomeItem,preco,plataforma)
+cadastrarJogoTabuleiro(nome,telefone,nomeItem,preco)
+cadastrarBluRayFilme(nome,telefone,nomeItem,preco,duracao,genero,classificacao,anoLancamento)
+cadastrarBluRayShow(nome,telefone,nomeItem,preco,duracao,numeroFaixas,artista,classicacao)
+cadastrarBluRaySerie(nome,telefone,nomeItem,preco,descricao,duracao,classificacao,genero,temporada)
+
+adicionarBluRay (nome,telefone,nomeBlurayTemporada,duracao)
+removerItem (nome,telefone,nomeItem)
+atualizarItem(nome,telefone,nomeItem,atributo,valor)
+atributo representa oq será alterado
+
+Depois de criados os tipos de itens emprestáveis, certifique-se de que os usuários cadastrados no 
+sistema tenham sua própria lista de itens (seus pertences que desejam emprestar). De posse do nome 
+do item e do nome do dono do item, deve ser possível identificar um item único no sistema. Assim, 
+não deve ser permitido que um usuário tenha itens com o mesmo nome. A lista de itens disponíveis 
+para empréstimo de cada usuário pode ser de quaisquer tipos criados neste caso de uso. 
+Então, adicionar/remover/pesquisar/atualizar um item no TT significa adicionar/remover/pesquisar/atualizar 
+um item na coleção de itens de um usuário específico. A pesquisa de itens oferecida pelo sistema deve usar 
+o nome do item e portanto pode retornar vários itens, se estes estiverem repetidos dentre as listas de empréstimo 
+dos usuários. Nesse caso de uso você deve garantir que itens (de quaisquer tipos) podem ser adicionados, removidos, 
+atualizados e pesquisados na rede TT.
+
+Caso de Uso 3: Funcionalidades de Pesquisa 
+
+Caso de Uso 4: Criação de Emprestimos
+Emprestimo(nomeDono,nomeRequerente,nomeItem,dataEmprestimo,periodo,dataDevolucao)
+
+De posse do nome do item, do nome do dono do item e seu telefone, deve ser possível identificar um item único no sistema. 
+Dois empréstimos são iguais se envolver os mesmos usuários, o mesmo nome do item e mesma data do empréstimo.
+Cada usuário deve manter uma lista dos empréstimos de que participou, seja ao emprestar, seja ao tomar emprestado. 
+Obviamente, itens que já estão emprestados não podem ser novamente emprestados até que sejam devolvidos.
+
+metodos: 
+registrarEmprestimo (nomeDono,telefoneDono,nomeRequerente,telefoneRequerente,nomeItem,dataEmprestimo,periodo)
+devolverItem (nomeDono,telefoneDono,nomeRequerente,telefoneRequerente,nomeItem,dataEmprestimo,dataDevolucao)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
